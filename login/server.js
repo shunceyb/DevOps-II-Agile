@@ -15,9 +15,8 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.use(cors());
 
 // เชื่อมต่อกับ MongoDB (อย่าลืมแก้ไข URL ใน connection string ตามที่ต้องการ)
-mongoose.connect('mongodb://localhost:27017/petcare', {
-    useNewUrlParser: true,
-    useUnifiedTopology: true,
+mongoose.connect(process.env.MONGODB_URI || 'mongodb://localhost:27017/petcare', {
+    authSource: 'admin'
 })
 .then(() => {
     console.log("Connected to MongoDB");
