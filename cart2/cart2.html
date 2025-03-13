@@ -25,8 +25,8 @@
             <a href="/askvet/askvet.html"><i class="fas fa-comment"></i></a>
             <a href="/cart/cart.html"><i class="fas fa-shopping-cart"></i></a> |
             <div class="profile">
-                <img src="img/yk.png" alt="Profile">
-                <span class="username">Onwara</span>
+                <a href="/account/index.html"><img src="img/yk.png" alt="Profile"></a>
+                <a href="/account/index.html" class="username">Onwara</a>
             </div>
         </div>
     </header>
@@ -154,15 +154,14 @@
       <h2 class="order-summary-title">Order Summary</h2>
 
       <div class="order-details">
-          <div class="order-item"><span>Items</span> <span>4</span></div>
-          <div class="order-item"><span>Sub Total</span> <span>$63.97</span></div>
-          <div class="order-item"><span>Shipping</span> <span>$35.00</span></div>
-          <div class="order-item"><span>Taxes</span> <span>$15.00</span></div>
-          <div class="order-item"><span>Coupon Discount</span> <span>$0.00</span></div>
-          <hr>
-          <div class="order-item total"><span>Total</span> <span>$113.97</span></div>
-      </div>
-      
+        <div class="order-item"><span>Items</span> <span id="total-items">0</span></div>
+        <div class="order-item"><span>Sub Total</span> <span id="sub-total">$0.00</span></div>
+        <div class="order-item"><span>Shipping</span> <span id="shipping-cost">$0.00</span></div>
+        <div class="order-item"><span>Taxes</span> <span id="taxes">$0.00</span></div>
+        <div class="order-item"><span>Coupon Discount</span> <span id="discount">$0.00</span></div>
+        <hr>
+        <div class="order-item total"><span>Total</span> <span id="total-price">$0.00</span></div>
+    </div>
 
       <h3 class="billing-title">Billing Address</h3>
 
@@ -188,6 +187,8 @@
         Place Order
     </button>
   </div>
+
+  <script src="/cart2/cart2.js"></script>
 
 </body>
 </html>

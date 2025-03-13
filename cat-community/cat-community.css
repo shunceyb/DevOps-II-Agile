@@ -16,6 +16,10 @@ body {
     align-items: center;
 }
 
+a {
+    text-decoration: none;
+}
+
 /* Header */
 header {
     display: flex;
@@ -671,3 +675,95 @@ nav {
 .post-actions i {
     margin-right: 5px;
 }
+
+/* ...existing code... */
+
+/* Comment Section */
+.comment-section {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.comment-header {
+    font-size: 14px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+.comment-box {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    background: #f9f9f9;
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    position: relative; /* Add this line */
+}
+
+.comment-profile-pic {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.comment-content {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    width: 100%;
+}
+
+.comment-text {
+    font-size: 14px;
+    color: #333;
+    background: #fff;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.comment-input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    outline: none;
+    font-size: 14px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.comment-button {
+    background-color: #28AA90;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: bold;
+    align-self: flex-end;
+}
+
+.comment-button:hover {
+    background-color: #1e8a70;
+}
+
+.delete-comment {
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+    cursor: pointer;
+    color: #1e8a70;
+}
+
+.delete-comment:hover {
+    color: #1e8a70;
+}
+
+/* ...existing code... */

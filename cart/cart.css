@@ -15,6 +15,10 @@ header {
     box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
 }
 
+a {
+    text-decoration: none;
+}
+
 .logo {
     color: #28AA90;
     position: absolute;
@@ -59,7 +63,6 @@ nav {
     color: #28AA90;
 }
 
-
 .icons {
     display: flex;
     align-items: center;
@@ -97,6 +100,7 @@ nav {
     font-weight: bold;
     color: #505050;
 }
+
 /* ----------------------- Cart Banner ----------------------- */
 .cart-section {
     display: flex;
@@ -130,6 +134,7 @@ nav {
     height: auto;
     object-fit: cover;
 }
+
 /* ----------------------- Breadcrumb Navigation ----------------------- */
 .breadcrumb {
     width: 70%;
@@ -217,6 +222,7 @@ nav {
     background-color: white;
     padding: 0 8px;
 }
+
 /* ----------------------- Cart Content ----------------------- */
 /* ----------------------- ปรับ Layout ให้อยู่ข้างกัน ----------------------- */
 .cart-content {
@@ -228,15 +234,14 @@ nav {
     margin: auto;
     padding: 20px;
 }
+
 /* ----------------------- Cart Table ----------------------- */
 /* ปรับขนาดของตารางสินค้าและ Order Summary */
 .cart-items {
     width: 70%;
     margin-left: -150px;
 }
-.cart-items tbody {
-    display: none; /* ซ่อนเฉพาะข้อมูลใน tbody ของตาราง */
-}
+
 /* ขยับหัวข้อ Product ไปทางซ้าย */
 .cart-table thead th.align-left {
     text-align: left;
@@ -479,6 +484,7 @@ hr {
     width: 24px;
     height: auto;
 }
+
 /* ----------------------- Shipping Method Section ----------------------- */
 .shipping-method-container {
     margin-top: 30px;
@@ -537,6 +543,7 @@ hr {
     margin-right: 15px;
     color: #045153;
 }
+
 .under-banner {
     width: 100%;
     display: flex;

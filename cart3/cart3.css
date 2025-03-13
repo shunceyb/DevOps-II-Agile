@@ -15,6 +15,10 @@ header {
     box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
 }
 
+a {
+    text-decoration: none;
+}
+
 .logo {
     color: #28AA90;
     position: absolute;

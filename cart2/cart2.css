@@ -28,6 +28,10 @@ header {
     position: relative; /* Allow for absolute positioning of the logo */
 }
 
+a {
+    text-decoration: none;
+}
+
 /* Logo and Name */
 .logo {
     color: #28AA90;
